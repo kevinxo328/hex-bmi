@@ -1,0 +1,198 @@
+.c-form {
+   display: flex;
+   flex-direction: column;
+   margin: 0 100px;
+   &__label {
+      color: $yellow;
+      margin-bottom: 8px;
+   }
+   &__input {
+      width: 100%;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 2px solid $yellow;
+      border-radius: 10px;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 8px 16px;
+   }
+}
+
+.c-cal {
+   font-size: 24px;
+   color: $gray;
+   background-color: $yellow;
+   border: none;
+   outline: none;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   &:hover{
+      box-shadow: 0 1px 6px 3px rgba($yellow,0.64);
+   }
+   &:active{
+      background-color: #DEA821;
+   }
+}
+
+.c-resultBtn{
+   width: 120px;
+   height: 120px;
+   background-color: transparent;
+   border-width: 6px;
+   border-style: solid;
+   border-radius: 50%;
+   cursor: pointer;
+   outline: none;
+   font-size: 32px;
+   position: relative;
+   display: inline-block;
+   line-height: 24px;
+   margin-right: 24px;
+   &--green{
+      color: $green;
+      border-color: $green;
+   }
+   &--blue{
+      color: $blue;
+      border-color: $blue;
+   }
+   &--orange{
+      color: $orange;
+      border-color: $orange;
+   }
+   &--redish{
+      color: $redish;
+      border-color: $redish;
+   }
+   &--red{
+      color: $red;
+      border-color: $red;
+   }
+   &__bmi{
+      margin-top: 14px;
+      span{
+         font-size: 14px;
+      }
+   }
+   &__loop{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      width:30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid $gray;
+      &--green{
+         background-color: $green;
+      }
+      &--blue{
+         background-color: $blue;
+      }
+      &--orange{
+         background-color: $orange;
+      }
+      &--redish{
+         background-color: $redish;
+      }
+      &--red{
+         background-color: $red;
+      }
+   }
+   &__status{
+      font-size: 32px;
+      &--green{
+         color: $green;
+      }
+      &--blue{
+         color: $blue;
+      }
+      &--orange{
+         color: $orange;
+      }
+      &--redish{
+         color: $redish;
+      }
+      &--red{
+         color: $red;
+      }
+   }
+}
+
+.js-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.c-result {
+   display: flex;
+   width: 100%;
+   max-width: 600px;
+   height: 62px;
+   background-color: white;
+   align-items: center;
+   justify-content: space-around;
+   font-size: 20px;
+   color: $gray;
+   margin-bottom: 16px;
+   position: relative;
+   &__mark {
+      position: absolute;
+      width: 8px;
+      height: 100%;
+      left: 0;
+      &--green{
+         background-color: $green;
+         box-shadow: rgba($green, 0.3) 2px 0 3px 0;
+      }
+      &--blue{
+         background-color: $blue;
+         box-shadow: rgba($blue, 0.3) 2px 0 3px 0;
+      }
+      &--orange{
+         background-color: $orange;
+         box-shadow: rgba($orange, 0.3) 2px 0 3px 0;
+      }
+      &--redish{
+         background-color: $redish;
+         box-shadow: rgba($redish, 0.3) 2px 0 3px 0;
+      }
+      &--red{
+         background-color: $red;
+         box-shadow: rgba($red, 0.3) 2px 0 3px 0;
+      }
+   }
+   &__status{
+      width: 80px;
+   }
+   &__bmi {
+      &--small {
+         font-size: 12px;
+         vertical-align: middle;
+         margin-right: 8px;
+      }
+   }
+   &__weight {
+      &--small {
+         font-size: 12px;
+         vertical-align: middle;
+         margin-right: 8px;
+      }
+   }
+   &__height {
+      &--small {
+         font-size: 12px;
+         vertical-align: middle;
+         margin-right: 8px;
+      }
+   }
+   &__date {
+      font-size: 12px;
+   }
+}

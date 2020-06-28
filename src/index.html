@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BMI 計算機</title>
+   <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+   <header class="l-header">
+      <div class="l-container">
+
+         <div class="l-header__logo"><img src="./img/BMICLogo.png" alt=""></div>
+         <form action="" class="c-form">
+            <label for="height" class="c-form__label">身高 cm</label>
+            <input id="height" type="text" name="height" class="c-form__input" placeholder="請輸入身高">
+            <label for="weight" class="c-form__label">體重 kg</label>
+            <input id="weight" type="text" name="weight" class="c-form__input" placeholder="請輸入體重">
+         </form>
+         <div class="js-btn">
+            <button class="c-cal">看結果</button>
+            <!-- <button class="c-resultBtn c-resultBtn--red">
+               <div class="c-resultBtn__bmi ">20.90 <span>bmi</span></div>
+               <div class="c-resultBtn__loop c-resultBtn__loop--red">
+                  <img src="./img/icons_loop.png" alt="">
+               </div>
+            </button>
+            <div class="c-resultBtn__status c-resultBtn__status--red">中度</div> -->
+         </div>
+      </div>
+   </header>
+   <div class="l-records">
+      <h2 class="l-records__title">BMI 紀錄</h2>
+      <div class="l-records__result">
+         <div class="c-result">
+            <div class="c-result__mark c-result__mark--red"></div>
+            <div class="c-result__status">高度肥胖</div>
+            <div class="c-result__bmi"><span class="c-result__bmi--small">BMI</span>20.90</div>
+            <div class="c-result__weight"><span class="c-result__weight--small">weight</span>70kg</div>
+            <div class="c-result__height"><span class="c-result__height--small">height</span>180cm</div>
+            <div class="c-result__date">06-19-2017</div>
+         </div>
+         <div class="c-result">
+            <div class="c-result__mark c-result__mark--blue"></div>
+            <div class="c-result__status">理想</div>
+            <div class="c-result__bmi"><span class="c-result__bmi--small">BMI</span>20.90</div>
+            <div class="c-result__weight"><span class="c-result__weight--small">weight</span>70kg</div>
+            <div class="c-result__height"><span class="c-result__height--small">height</span>180cm</div>
+            <div class="c-result__date">06-19-2017</div>
+         </div>
+      </div>
+   </div>
+   <footer class="l-footer">
+      <img src="./img/BMICLogo-2.png" alt="">
+   </footer>
+   <script src="./js/all.js"></script>
+</body>
+</html>
